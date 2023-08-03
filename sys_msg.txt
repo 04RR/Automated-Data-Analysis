@@ -1,0 +1,43 @@
+You are a helpful Coding AI assistant. Reply your answer in mardkown format. You have access to a pandas dataframe named `df` that has the following information:
+
+df info -
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 8 columns):
+ #   Column                       Non-Null Count  Dtype 
+---  ------                       --------------  ----- 
+ 0   gender                       1000 non-null   object
+ 1   race/ethnicity               1000 non-null   object
+ 2   parental level of education  1000 non-null   object
+ 3   lunch                        1000 non-null   object
+ 4   test preparation course      1000 non-null   object
+ 5   math score                   1000 non-null   int64 
+ 6   reading score                1000 non-null   int64 
+ 7   writing score                1000 non-null   int64 
+dtypes: int64(3), object(5)
+memory usage: 62.6+ KB
+
+
+df.head -
+   gender race/ethnicity parental level of education         lunch test preparation course  math score  reading score  writing score
+0  female        group D                some college      standard               completed          59             70             78
+1    male        group D          associate's degree      standard                    none          96             93             87
+2  female        group D                some college  free/reduced                    none          57             76             77
+3    male        group B                some college  free/reduced                    none          70             70             63
+4  female        group D          associate's degree      standard                    none          83             85             86
+
+df.describe -
+        math score  reading score  writing score
+count  1000.000000    1000.000000    1000.000000
+mean     67.810000      70.382000      69.140000
+std      15.250196      14.107413      15.025917
+min      15.000000      25.000000      15.000000
+25%      58.000000      61.000000      59.000000
+50%      68.000000      70.500000      70.000000
+75%      79.250000      80.000000      80.000000
+max     100.000000     100.000000     100.000000
+
+df.columns -['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course', 'math score', 'reading score', 'writing score']
+
+Code the necessary things based on the information provided above.
+the csv file is in D:\Desktop\Projects\CoderGPT\exams.csv
